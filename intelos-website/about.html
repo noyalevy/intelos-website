@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — INTELOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg width="158" height="32" viewBox="0 0 158 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 10 L0 0 L10 0" stroke="#F01515" stroke-width="2.2" stroke-linecap="square"/>
+        <path d="M22 22 L22 32 L12 32" stroke="#F01515" stroke-width="2.2" stroke-linecap="square"/>
+        <rect x="9.5" y="13" width="5" height="5" fill="#F01515"/>
+        <line x1="0" y1="16" x2="6" y2="16" stroke="#F01515" stroke-width="1" opacity="0.5"/>
+        <line x1="16" y1="16" x2="22" y2="16" stroke="#F01515" stroke-width="1" opacity="0.5"/>
+        <text x="34" y="22" font-family="'DM Sans', Helvetica, Arial, sans-serif" font-size="15" font-weight="500" fill="#D4DBE6" letter-spacing="3.5">INTELOS</text>
+      </svg>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">DM PLATFORM</a></li>
+      <li><a href="ai-edge.html">AI EDGE</a></li>
+      <li><a href="about.html" class="active">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero" style="background: var(--bg-2);">
+    <div class="page-hero-content">
+      <div class="section-label">Who We Are</div>
+      <h1 style="font-family:'Barlow Condensed',sans-serif; font-size:clamp(56px,9vw,120px); font-weight:800; text-transform:uppercase; line-height:0.92; color:var(--text); margin-bottom:28px;">
+        About<br>INTELOS
+      </h1>
+      <p class="section-desc" style="margin-top:0; max-width:560px;">A technology company built by experts — providing artificial intelligence platforms that help enterprises solve their most challenging business obstacles.</p>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <section style="background: var(--bg);">
+    <div class="about-content">
+      <div>
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title">Intelligence<br>That Acts</h2>
+        <p class="section-desc" style="margin-top:24px;">Intelos was established by a passionate team of computer scientists and engineers with deep expertise in AI, data analysis, distributed systems, and marketing. We built the tools we wished existed.</p>
+        <p class="section-desc" style="margin-top:20px;">Our mission is singular: transform raw, scattered data into decisive intelligence — giving enterprises the clarity to act where there was once only noise.</p>
+      </div>
+      <div>
+        <div class="section-label">Devoted Support</div>
+        <h2 class="section-title">Unparalleled<br>Support</h2>
+        <p class="section-desc" style="margin-top:24px;">Our team brings a wealth of knowledge and experience to provide support that goes beyond the product. We are invested in your outcomes — from onboarding to scale.</p>
+        <a href="contact.html" class="btn-primary" style="margin-top:40px; display:inline-flex;">
+          Contact Our Team
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section style="background: var(--bg-2);">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Our Domains</h2>
+    <div class="expertise-list" style="margin-top:48px;">
+      <div class="expertise-item"><span>Artificial Intelligence</span></div>
+      <div class="expertise-item"><span>Data Analysis</span></div>
+      <div class="expertise-item"><span>Distributed Systems</span></div>
+      <div class="expertise-item"><span>Marketing Intelligence</span></div>
+      <div class="expertise-item"><span>Machine Learning</span></div>
+      <div class="expertise-item"><span>Data Engineering</span></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="section-label">Work With Us</div>
+    <h2 class="section-title">Let's Build<br>Together</h2>
+    <p class="section-desc">Whether you're ready to deploy or just exploring, our team is here to find the right solution for you.</p>
+    <a href="contact.html" class="btn-primary" style="margin-top:40px;">
+      Get in Touch
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">INTELOS</a>
+    <ul class="footer-links">
+      <li><a href="index.html">DM Platform</a></li>
+      <li><a href="ai-edge.html">AI Edge</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-right">
+      <div class="footer-legal">
+        <a href="https://policies.google.com/privacy">Privacy Policy</a>
+        <a href="https://policies.google.com/terms">Terms of Service</a>
+      </div>
+      <span class="footer-copy">©2026 INTELOS LTD</span>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('navBurger');
+    const navLinks = document.getElementById('navLinks');
+    const navEl = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      navEl.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navEl.classList.remove('open');
+      navLinks.classList.remove('open');
+    }));
+
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.borderBottomColor = window.scrollY > 60
+        ? 'rgba(240,21,21,0.12)'
+        : 'rgba(255,255,255,0.04)';
+    });
+  </script>
+</body>
+</html>
