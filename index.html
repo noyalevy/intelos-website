@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTELOS — Data Intelligence Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <svg width="158" height="32" viewBox="0 0 158 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Top-left bracket -->
+        <path d="M0 10 L0 0 L10 0" stroke="#F01515" stroke-width="2.2" stroke-linecap="square"/>
+        <!-- Bottom-right bracket -->
+        <path d="M22 22 L22 32 L12 32" stroke="#F01515" stroke-width="2.2" stroke-linecap="square"/>
+        <!-- Center precision dot -->
+        <rect x="9.5" y="13" width="5" height="5" fill="#F01515"/>
+        <!-- Thin horizontal tick lines -->
+        <line x1="0" y1="16" x2="6" y2="16" stroke="#F01515" stroke-width="1" opacity="0.5"/>
+        <line x1="16" y1="16" x2="22" y2="16" stroke="#F01515" stroke-width="1" opacity="0.5"/>
+        <!-- Wordmark -->
+        <text x="34" y="22"
+              font-family="'DM Sans', Helvetica, Arial, sans-serif"
+              font-size="15" font-weight="500"
+              fill="#D4DBE6" letter-spacing="3.5">INTELOS</text>
+      </svg>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">DM PLATFORM</a></li>
+      <li><a href="ai-edge.html">AI EDGE</a></li>
+      <li><a href="about.html">ABOUT US</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <div class="hero-label">AI-Powered Data Intelligence</div>
+      <h1>Harness<br>Your Data<br>With <em>AI</em></h1>
+      <p class="hero-sub">Multi-dimensional intelligence on populations, territories, and behavioral patterns — at the scale and speed that decisions demand.</p>
+      <div class="hero-actions">
+        <a href="mailto:info@intelos.io?subject=Let's get started!" class="btn-primary">
+          Get Started
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#platform" class="btn-ghost">Explore Platform</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <div class="manifesto">
+    <div class="manifesto-inner">
+      <p class="manifesto-text">
+        Intelligence isn't what you collect.
+        <strong>It's what you understand — before others do.</strong>
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATFORM -->
+  <section class="platform" id="platform">
+    <div class="section-label">The Platform</div>
+    <h2 class="section-title">Comprehensive<br>Approach</h2>
+    <p class="section-desc">One unified platform for collecting, processing, and understanding data at population scale. Connect every source, uncover every pattern — and deliver the ground truth behind every decision.</p>
+
+    <div class="platform-grid">
+
+      <div class="platform-card">
+        <div class="card-number">01</div>
+        <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path d="M12 2a7 7 0 0 0-7 7c0 4.5 3.5 9 7 13 3.5-4 7-8.5 7-13a7 7 0 0 0-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        <div class="card-title">Data Collection</div>
+        <p class="card-text">We collect data from all available sources — mobile devices, desktops, and private databases — using innovative methods to track predefined attributes across geographics, demographics, psychographics, and more.</p>
+      </div>
+
+      <div class="platform-card">
+        <div class="card-number">02</div>
+        <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="1"/>
+          <path d="M3 9h18M9 21V9M15 21V9"/>
+        </svg>
+        <div class="card-title">Data Processing</div>
+        <p class="card-text">Segmentation is the core of our processing capabilities — from base operators to recency & frequency at segment level, constraint conditions, and complex analytical settings across every data layer.</p>
+      </div>
+
+      <div class="platform-card full">
+        <div class="card-number">03</div>
+        <svg class="card-icon" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+          <path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/>
+          <path d="M12 3v18M3 7l9 4 9-4"/>
+        </svg>
+        <div class="card-title">Accurate Foundation</div>
+        <p class="card-text">We've built the most accurate index of the offline world. Our proprietary mapping technology was engineered with a single purpose: to accurately contextualize physical locations and give you the ground truth behind every data point.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <div class="pipeline">
+    <div class="pipeline-inner">
+      <div class="pipeline-step">
+        <div class="pipeline-num">01 — Collect</div>
+        <div class="pipeline-title">Ingest</div>
+        <p class="pipeline-desc">Continuous data ingestion from mobile, digital, and physical environments — across every layer of human activity, at any scale.</p>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">02 — Process</div>
+        <div class="pipeline-title">Understand</div>
+        <p class="pipeline-desc">AI-driven segmentation, behavioral modeling, and pattern recognition applied at population scale — in real time, without compromise.</p>
+      </div>
+      <div class="pipeline-step">
+        <div class="pipeline-num">03 — Deliver</div>
+        <div class="pipeline-title">Act</div>
+        <p class="pipeline-desc">Precise, actionable intelligence surfaced to decision-makers who determine the outcome — before the window closes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-number">150+</div>
+        <div class="stat-label">Integrated Data Sources</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">&lt;1s</div>
+        <div class="stat-label">Signal to Actionable Insight</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">360°</div>
+        <div class="stat-label">Ground Truth Coverage</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OPERATIONAL CONTEXTS -->
+  <section style="background: var(--bg);">
+    <div class="section-label">Applications</div>
+    <h2 class="section-title">Where It<br>Operates</h2>
+    <div class="context-grid" style="margin-top: 56px;">
+      <div class="context-item">
+        <div class="context-tag">Territory</div>
+        <h3 class="context-title">Geographic<br>Intelligence</h3>
+        <p class="context-text">Correlate digital signals with physical locations at precision scale. Understand what is happening in a territory — and why — before it becomes visible through conventional reporting.</p>
+      </div>
+      <div class="context-item">
+        <div class="context-tag">Population</div>
+        <h3 class="context-title">Behavioral<br>Analysis</h3>
+        <p class="context-text">Build predictive models of population-scale behavior. Identify cohorts, track shifts, and anticipate collective action across any defined group or geography.</p>
+      </div>
+      <div class="context-item">
+        <div class="context-tag">Signal</div>
+        <h3 class="context-title">Anomaly<br>Detection</h3>
+        <p class="context-text">Identify deviations within population-scale data. Monitor for behavioral drift, track emerging patterns, and alert operators before a signal becomes a crisis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDATION VISUAL -->
+  <section class="foundation">
+    <div class="foundation-inner">
+      <div>
+        <div class="section-label">Mapping Technology</div>
+        <h2 class="section-title">The Offline<br>World,<br>Indexed</h2>
+        <p class="section-desc" style="margin-top: 24px;">Our proprietary mapping technology creates the most accurate contextual index of physical locations — bridging the gap between digital intelligence and the real world.</p>
+        <a href="contact.html" class="btn-primary" style="margin-top: 40px; display: inline-flex;">
+          Talk to Us
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="foundation-visual">
+        <div class="grid-visual">
+          <div class="grid-point"></div>
+          <div class="grid-point"></div>
+          <div class="grid-point"></div>
+          <div class="grid-point"></div>
+        </div>
+        <div class="coordinates">32.0853° N &nbsp; 34.7818° E</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="section-label">Ready to Start?</div>
+    <h2 class="section-title">Make Smarter<br>Decisions</h2>
+    <p class="section-desc">Give your decision-makers the ground truth they need to act with certainty — before the window closes.</p>
+    <a href="mailto:info@intelos.io?subject=Let's get started!" class="btn-primary">
+      Get Started
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">INTELOS</a>
+    <ul class="footer-links">
+      <li><a href="index.html">DM Platform</a></li>
+      <li><a href="ai-edge.html">AI Edge</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-right">
+      <div class="footer-legal">
+        <a href="https://policies.google.com/privacy">Privacy Policy</a>
+        <a href="https://policies.google.com/terms">Terms of Service</a>
+      </div>
+      <span class="footer-copy">©2026 INTELOS LTD</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Canvas: signal propagation on dot grid ──
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    const G = 'rgba(240,21,21,';
+
+    function resize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', () => { resize(); initDots(); });
+
+    let dots = [];
+    function initDots() {
+      dots = [];
+      const sp = 80;
+      for (let x = 0; x < canvas.width + sp; x += sp) {
+        for (let y = 0; y < canvas.height + sp; y += sp) {
+          dots.push({
+            x: x + (Math.random() - 0.5) * 24,
+            y: y + (Math.random() - 0.5) * 24,
+            o: Math.random() * 0.25 + 0.04
+          });
+        }
+      }
+    }
+    initDots();
+
+    let signals = [];
+    function addSignal() {
+      const d = dots[Math.floor(Math.random() * dots.length)];
+      signals.push({ x: d.x, y: d.y, r: 0, maxR: 100 + Math.random() * 100, spd: 0.7 + Math.random() * 0.5 });
+    }
+    addSignal(); addSignal();
+    setInterval(addSignal, 1800);
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Dots
+      for (const d of dots) {
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = G + d.o + ')';
+        ctx.fill();
+      }
+
+      // Signals
+      for (let i = signals.length - 1; i >= 0; i--) {
+        const s = signals[i];
+        const p = s.r / s.maxR;
+        const op = 0.45 * (1 - p);
+
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.strokeStyle = G + op + ')';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        if (s.r > 24) {
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.r * 0.55, 0, Math.PI * 2);
+          ctx.strokeStyle = G + (op * 0.4) + ')';
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+
+        s.r += s.spd;
+        if (s.r >= s.maxR) signals.splice(i, 1);
+      }
+
+      // Reticle (right side, off-center)
+      const rx = canvas.width * 0.76, ry = canvas.height * 0.38, rs = 18;
+      ctx.strokeStyle = G + '0.18)';
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(rx - rs, ry); ctx.lineTo(rx + rs, ry); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(rx, ry - rs); ctx.lineTo(rx, ry + rs); ctx.stroke();
+      ctx.beginPath(); ctx.arc(rx, ry, rs * 1.6, 0, Math.PI * 2);
+      ctx.strokeStyle = G + '0.07)'; ctx.stroke();
+
+      // Corner brackets
+      const m = 38, sz = 56;
+      ctx.strokeStyle = G + '0.07)';
+      ctx.lineWidth = 1;
+      const corners = [
+        [m, m, m + sz, m, m, m + sz],
+        [canvas.width - m - sz, m, canvas.width - m, m, canvas.width - m, m + sz],
+        [m, canvas.height - m, m + sz, canvas.height - m, m, canvas.height - m - sz],
+        [canvas.width - m - sz, canvas.height - m, canvas.width - m, canvas.height - m, canvas.width - m, canvas.height - m - sz]
+      ];
+      for (const [x1, y1, x2, y2, x3, y3] of corners) {
+        ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.lineTo(x3, y3); ctx.stroke();
+      }
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+
+    // Hamburger menu
+    const burger = document.getElementById('navBurger');
+    const navLinks = document.getElementById('navLinks');
+    const navEl = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      navEl.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navEl.classList.remove('open');
+      navLinks.classList.remove('open');
+    }));
+
+    // Nav border on scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.style.borderBottomColor = window.scrollY > 60
+        ? 'rgba(201,168,76,0.12)'
+        : 'rgba(255,255,255,0.04)';
+    });
+  </script>
+</body>
+</html>
