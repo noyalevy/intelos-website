@@ -800,9 +800,8 @@ nav.open .nav-burger span:nth-child(3) { transform: translateY(-6.5px) rotate(-4
 }
 .anim {
   opacity: 0;
-  transform: translateY(22px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(16px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .anim.visible {
   opacity: 1;
