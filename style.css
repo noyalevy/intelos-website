@@ -133,7 +133,7 @@ nav {
 }
 
 .hero-sub {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-muted);
   max-width: 460px;
   margin-bottom: 48px;
@@ -243,7 +243,7 @@ section { padding: 100px 60px; }
 }
 
 .section-desc {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--text-muted);
   max-width: 520px;
   line-height: 1.8;
@@ -322,7 +322,7 @@ section { padding: 100px 60px; }
 }
 
 .card-text {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 1.8;
   font-weight: 300;
@@ -531,7 +531,7 @@ footer {
   color: var(--text);
   margin-bottom: 12px;
 }
-.feature-text { font-size: 14px; color: var(--text-muted); line-height: 1.8; font-weight: 300; }
+.feature-text { font-size: 16px; color: var(--text-muted); line-height: 1.8; font-weight: 300; }
 
 .gdpr-badge {
   width: 110px;
@@ -688,7 +688,7 @@ footer {
   letter-spacing: 0.04em;
 }
 .pipeline-desc {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-muted);
   line-height: 1.8;
   font-weight: 300;
@@ -730,7 +730,7 @@ footer {
   line-height: 1.1;
 }
 .context-text {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 1.85;
   font-weight: 300;
@@ -789,6 +789,29 @@ footer {
 nav.open .nav-burger span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 nav.open .nav-burger span:nth-child(2) { opacity: 0; }
 nav.open .nav-burger span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ── ENTRANCE ANIMATIONS ── */
+.hero-content {
+  animation: heroIn 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.anim {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.anim.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim { opacity: 1; transform: none; transition: none; }
+  .hero-content { animation: none; }
+}
 
 /* ── RESPONSIVE: TABLET (≤960px) ── */
 @media (max-width: 960px) {
